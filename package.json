@@ -1,0 +1,23 @@
+{
+  "name": "olympos-gulp",
+  "version": "1.0.0",
+  "description": "Gulp dependencies for Olympos WordPress theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "idoric@gaussx.com:/repo/gaussnew.git"
+  },
+  "author": "Ivan Dorić",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "laravel-elixir": "^6.0.0-9"
+  },
+  "dependencies": {
+    "laravel-elixir-browsersync": "^0.1.5",
+    "laravel-elixir-browsersync-official": "^1.0.0"
+  }
+}

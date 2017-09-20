@@ -1,0 +1,56 @@
+/* =======================================================================
+## ++ Globals
+========================================================================== */
+html{
+    width:100%;
+    height: 100%;
+    font-size:100%;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+    background: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+
+a{
+    text-decoration: none;
+    color:#1788ea;
+}
+
+/* =======================================================================
+## ++ Cleafix
+========================================================================== */
+
+/* float clearing for IE6 */
+* html .clearfix{
+ height: 1%;
+ overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+ min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+ clear: both;
+ content: ".";
+ display: block;
+ height: 0;
+ visibility: hidden;
+ font-size: 0;
+}
+
+.clr{clear:both;}
+
+.hide-on-desktop{
+    display: none;
+}
