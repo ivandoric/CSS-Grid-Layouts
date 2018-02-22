@@ -1,0 +1,56 @@
+.wrap{
+    width: 90%;
+    margin: 40px auto;
+}
+
+.medium-grid{
+    display: grid;
+    grid-template-rows: repeat(5, 50px);
+    grid-gap: 20px;
+    grid-template-areas:
+        "lg lg lg lg s1 s1 s2 s2"
+        "lg lg lg lg s1 s1 s2 s2"
+        "lg lg lg lg cp md md s3"
+        "lg lg lg lg cp md md s3"
+        "lg lg lg lg cp md md s3"
+}
+
+@media only screen and (max-width: 900px) {
+    .medium-grid{
+        grid-template-areas:
+            "lg lg lg lg lg lg md md"
+            "lg lg lg lg lg lg md md"
+            "s3 s3 s3 s3 s3 s3 md md"
+            "s3 s3 s3 s3 s3 s3 cp cp"
+            "s3 s3 s3 s3 s3 s3 cp cp"
+        ;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .medium-grid{
+        grid-template-areas:
+                "lg lg lg lg lg lg lg lg"
+                "lg lg lg lg lg lg lg lg"
+                "s3 s3 s3 s3 s3 s3 s3 s3"
+                "s3 s3 s3 s3 s3 s3 s3 s3"
+                "md md md md md md md md"
+    ;
+    }
+}
+
+.item-1{
+     grid-area: lg;
+     background: #000000;
+ }
+
+.item-2{
+    grid-area: s3;
+    background: #cccccc;
+}
+
+.item-3{
+    grid-area: md;
+    background: red;
+}
+
